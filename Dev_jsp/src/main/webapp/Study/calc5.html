@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>서블릿/JSP 강의 29 -학습과제(사용자 입력을 통한 계산 요청)</title>
+	<style type="text/css">
+		input[type=text]{
+			border: 1px black solid;
+			color: blue;
+			width: 50px
+		}
+		input[type=submit]{
+			background-color: orange;
+
+		}
+		
+	</style>
+</head>
+<body>
+	환영합니다.
+	<form action="../Calc33" method="post">
+		<div>
+		<h3>계산할 값을 입력 하세요.</h3>
+		<label>입력 : </label>
+		<input type="text" name="v"/>
+		</div>
+		<div>
+		<input type="submit" name="operator" value="+"/>
+		<input type="submit" name="operator" value="-"/>
+		<input type="submit" name="operator" value="=" />
+		</div>
+	</form>
+</body>
+</html>
